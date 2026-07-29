@@ -1,0 +1,23 @@
+/* Учебный макет: весь JS сайта вырезан (в т.ч. IntersectionObserver,
+   который в оригинале добавляет класс is-in при прокрутке и делает
+   блоки видимыми). Без него элементы с классом w-reveal остаются
+   с opacity:0 навсегда. Этот файл принудительно показывает их. */
+
+.w-reveal,
+.w-reveal.is-in,
+.w-reveal:not(.is-in) {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.w-hero-line-in,
+.w-hero-rise {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.animate-pulse-custom {
+  animation: none !important;
+  opacity: 1 !important;
+}
